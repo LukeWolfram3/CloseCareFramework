@@ -1,0 +1,74 @@
+{
+  "hospitals": [
+    {
+      "name": "General City Hospital",
+      "latitude": 40.712776,
+      "longitude": -74.005974,
+      "phone": "(555) 111-1234",
+      "website": "https://generalcityhospital.com"
+    },
+    {
+      "name": "Mercy Regional Medical Center",
+      "latitude": 34.052235,
+      "longitude": -118.243683,
+      "phone": "(555) 222-2345",
+      "website": "https://mercyregional.com"
+    },
+    {
+      "name": "Sunrise Health Hospital",
+      "latitude": 41.878113,
+      "longitude": -87.629799,
+      "phone": "(555) 333-3456",
+      "website": "https://sunrisehealth.com"
+    },
+    {
+      "name": "Riverside Community Hospital",
+      "latitude": 29.760427,
+      "longitude": -95.369804,
+      "phone": "(555) 444-4567",
+      "website": "https://riversidecommunity.com"
+    },
+    {
+      "name": "Green Valley Medical Center",
+      "latitude": 34.052235,
+      "longitude": -118.243683,
+      "phone": "(555) 555-5678",
+      "website": "https://greenvalleymedical.com"
+    },
+    {
+      "name": "Lakeside Hospital",
+      "latitude": 32.715736,
+      "longitude": -117.161087,
+      "phone": "(555) 666-6789",
+      "website": "https://lakesidehospital.com"
+    },
+    {
+      "name": "Mountainview General Hospital",
+      "latitude": 37.774929,
+      "longitude": -122.419418,
+      "phone": "(555) 777-7890",
+      "website": "https://mountainviewgeneral.com"
+    },
+    {
+      "name": "Pinewood Healthcare Center",
+      "latitude": 39.739236,
+      "longitude": -104.990251,
+      "phone": "(555) 888-8901",
+      "website": "https://pinewoodhealthcare.com"
+    },
+    {
+      "name": "Clearwater Memorial Hospital",
+      "latitude": 33.448376,
+      "longitude": -112.074036,
+      "phone": "(555) 999-9012",
+      "website": "https://clearwatermemorial.com"
+    },
+    {
+      "name": "Oceanview Medical Hospital",
+      "latitude": 47.606209,
+      "longitude": -122.332069,
+      "phone": "(555) 000-0123",
+      "website": "https://oceanviewmedical.com"
+    }
+  ]
+}

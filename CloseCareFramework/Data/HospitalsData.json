@@ -1,0 +1,75 @@
+{
+  "hospitals": [
+    {
+      "name": "NewYork-Presbyterian Hospital",
+      "latitude": 40.840673,
+      "longitude": -73.942743,
+      "phone": "(212) 305-2500",
+      "website": "https://www.nyp.org"
+    },
+    {
+      "name": "Cleveland Clinic",
+      "latitude": 41.503599,
+      "longitude": -81.620933,
+      "phone": "(216) 444-2200",
+      "website": "https://my.clevelandclinic.org"
+    },
+    {
+      "name": "Mayo Clinic",
+      "latitude": 44.022541,
+      "longitude": -92.467394,
+      "phone": "(507) 284-2511",
+      "website": "https://www.mayoclinic.org"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "latitude": 42.362844,
+      "longitude": -71.069371,
+      "phone": "(617) 726-2000",
+      "website": "https://www.massgeneral.org"
+    },
+    {
+      "name": "UCLA Medical Center",
+      "latitude": 34.065860,
+      "longitude": -118.444996,
+      "phone": "(310) 825-9111",
+      "website": "https://www.uclahealth.org"
+    },
+    {
+      "name": "Johns Hopkins Hospital",
+      "latitude": 39.296667,
+      "longitude": -76.592548,
+      "phone": "(410) 955-5000",
+      "website": "https://www.hopkinsmedicine.org"
+    },
+    {
+      "name": "Stanford Health Care",
+      "latitude": 37.434798,
+      "longitude": -122.175893,
+      "phone": "(650) 723-4000",
+      "website": "https://stanfordhealthcare.org"
+    },
+    {
+      "name": "Cedars-Sinai Medical Center",
+      "latitude": 34.075356,
+      "longitude": -118.380974,
+      "phone": "(310) 423-3277",
+      "website": "https://www.cedars-sinai.org"
+    },
+    {
+      "name": "Houston Methodist Hospital",
+      "latitude": 29.711524,
+      "longitude": -95.400816,
+      "phone": "(713) 790-3311",
+      "website": "https://www.houstonmethodist.org"
+    },
+    {
+      "name": "Northwestern Memorial Hospital",
+      "latitude": 41.894656,
+      "longitude": -87.620224,
+      "phone": "(312) 926-2000",
+      "website": "https://www.nm.org"
+    }
+  ]
+}
+

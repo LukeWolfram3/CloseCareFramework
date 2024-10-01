@@ -1,0 +1,75 @@
+{
+  "urgentCares": [
+    {
+      "name": "QuickMed Urgent Care",
+      "latitude": 40.73061,
+      "longitude": -73.935242,
+      "phone": "(555) 123-4567",
+      "website": "https://quickmedurgentcare.com"
+    },
+    {
+      "name": "Express Health Urgent Care",
+      "latitude": 34.052235,
+      "longitude": -118.243683,
+      "phone": "(555) 234-5678",
+      "website": "https://expresshealthcare.com"
+    },
+    {
+      "name": "Fast Track Urgent Care",
+      "latitude": 41.878113,
+      "longitude": -87.629799,
+      "phone": "(555) 345-6789",
+      "website": "https://fasttrackurgentcare.com"
+    },
+    {
+      "name": "MedExpress Urgent Care",
+      "latitude": 29.760427,
+      "longitude": -95.369804,
+      "phone": "(555) 456-7890",
+      "website": "https://medexpress.com"
+    },
+    {
+      "name": "CityCare Urgent Clinic",
+      "latitude": 34.052235,
+      "longitude": -117.243683,
+      "phone": "(555) 567-8901",
+      "website": "https://citycareclinic.com"
+    },
+    {
+      "name": "GoCare Urgent Care",
+      "latitude": 32.715736,
+      "longitude": -117.161087,
+      "phone": "(555) 678-9012",
+      "website": "https://gocareurgentcare.com"
+    },
+    {
+      "name": "HealthFirst Urgent Care",
+      "latitude": 37.774929,
+      "longitude": -122.419418,
+      "phone": "(555) 789-0123",
+      "website": "https://healthfirstcare.com"
+    },
+    {
+      "name": "VitalUrgent Clinic",
+      "latitude": 39.739236,
+      "longitude": -104.990251,
+      "phone": "(555) 890-1234",
+      "website": "https://vitalurgentclinic.com"
+    },
+    {
+      "name": "CareNow Urgent Care",
+      "latitude": 33.448376,
+      "longitude": -112.074036,
+      "phone": "(555) 901-2345",
+      "website": "https://carenowurgentcare.com"
+    },
+    {
+      "name": "AllDay Urgent Care",
+      "latitude": 47.606209,
+      "longitude": -122.332069,
+      "phone": "(555) 012-3456",
+      "website": "https://alldayurgentcare.com"
+    }
+  ]
+}
+
