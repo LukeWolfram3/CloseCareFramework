@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153779A42CAD48FE00441482 /* FullScreenCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153779A32CAD48FE00441482 /* FullScreenCoverView.swift */; };
 		15AF488B2C9F22EA004043BA /* CloseCareFrameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF488A2C9F22EA004043BA /* CloseCareFrameworkApp.swift */; };
 		15AF488F2C9F22EB004043BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AF488E2C9F22EB004043BA /* Assets.xcassets */; };
 		15AF48922C9F22EB004043BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AF48912C9F22EB004043BA /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153779A32CAD48FE00441482 /* FullScreenCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverView.swift; sourceTree = "<group>"; };
 		15AF48872C9F22EA004043BA /* CloseCareFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseCareFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AF488A2C9F22EA004043BA /* CloseCareFrameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseCareFrameworkApp.swift; sourceTree = "<group>"; };
 		15AF488E2C9F22EB004043BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				15AF488A2C9F22EA004043BA /* CloseCareFrameworkApp.swift */,
 				15AF48982C9F240B004043BA /* MainView.swift */,
 				15E4796F2CA6BA4B00AC42AC /* SheetDetailView.swift */,
+				153779A32CAD48FE00441482 /* FullScreenCoverView.swift */,
 				15AF489A2C9F2689004043BA /* Models */,
 				15AF48A92CA17AFD004043BA /* HandlingJSON */,
 				15AF48A02CA1679A004043BA /* Data */,
@@ -199,6 +202,7 @@
 				15AF488B2C9F22EA004043BA /* CloseCareFrameworkApp.swift in Sources */,
 				15AF489C2C9F269F004043BA /* LocationManager.swift in Sources */,
 				15AF48AB2CA17B54004043BA /* HandlingJSONData.swift in Sources */,
+				153779A42CAD48FE00441482 /* FullScreenCoverView.swift in Sources */,
 				15AF48A62CA16E91004043BA /* HospitalModel.swift in Sources */,
 				15E479702CA6BA4B00AC42AC /* SheetDetailView.swift in Sources */,
 			);

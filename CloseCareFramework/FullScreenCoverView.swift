@@ -1,16 +1,14 @@
 //
-//  SheetDetailView.swift
+//  FullScreenCoverView.swift
 //  CloseCareFramework
 //
-//  Created by Luke Wolfram on 9/27/24.
+//  Created by Luke Wolfram on 10/2/24.
 //
 
 import SwiftUI
 import MapKit
 
-// Change this sheet view so that it has search options and then make a fullcover screen that goes above the sheet for directions and information
-
-struct SheetDetailView: View {
+struct FullScreenCoverView: View {
     
     @Binding var showSheet: Bool
     @Binding var selectedDetent: PresentationDetent
@@ -21,6 +19,7 @@ struct SheetDetailView: View {
     @State private var lookAroundScene: MKLookAroundScene?
     
     @Binding var MKMapItemPlacemark: MKMapItem?
+    
     
     var body: some View {
         ZStack {
@@ -82,34 +81,11 @@ struct SheetDetailView: View {
             
             .padding()
         }
-//        .background(.windowBackground)
+        //        .background(.windowBackground)
     }
-
 }
+    
 
-
-#Preview {
-    SheetDetailView(showSheet: .constant(false), selectedDetent: .constant(.medium), urgentCares: .constant([UrgentCare(name: "Test Urgent Care", latitude: 37.7749, longitude: -122.4194, phone: "919-6969-6969", website: URL(string: "https://fasttrackurgentcare.com")!)]), hospitals: .constant([Hospital(name: "Test Hospital", latitude: 37.7749, longitude: 122.4194, phone: "696-6969-6969", website: URL(string: "https://testhospital.com")!)]), getDirections: .constant(false), placeType: .constant("Urgent Care"), MKMapItemPlacemark: .constant(nil))
-}
-
-
-
-//VStack {
-//                Spacer()
-//                HStack {
-//                    Image(systemName: "location.magnifyingglass")
-////                        .foregroundStyle(.blue)
-//                        .font(.title)
-//                        .padding(.leading, 3)
-//                    TextField("Search...", text: $textFieldText)
-//                        .font(.title)
-//                    Image(systemName: "person.fill")
-//                        .font(.title)
-//                        .padding(.trailing, 12)
-//                }
-//                .frame(maxWidth: UIScreen.main.bounds.width * 0.8, maxHeight: UIScreen.main.bounds.height * 0.08)
-//                .background(.white)
-//                .cornerRadius(20)
-//                .padding()
-//            }
-
+    #Preview {
+        SheetDetailView(showSheet: .constant(false), selectedDetent: .constant(.medium), urgentCares: .constant([UrgentCare(name: "Test Urgent Care", latitude: 37.7749, longitude: -122.4194, phone: "919-6969-6969", website: URL(string: "https://fasttrackurgentcare.com")!)]), hospitals: .constant([Hospital(name: "Test Hospital", latitude: 37.7749, longitude: 122.4194, phone: "696-6969-6969", website: URL(string: "https://testhospital.com")!)]), getDirections: .constant(false), placeType: .constant("Urgent Care"), MKMapItemPlacemark: .constant(nil))
+    }

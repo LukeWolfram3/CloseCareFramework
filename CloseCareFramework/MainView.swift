@@ -8,13 +8,15 @@
 import SwiftUI
 import MapKit
 
+//WHAT PROBLEM ARE WE SOLVING, NOT WHAT ARE WE TRYING TO BUILD
 struct MainView: View {
     
     @Environment(LocationManager.self) var locationManager
     @State private var urgentCares: [UrgentCare] = []
     @State private var hospitals: [Hospital] = []
     @State private var scaleSize: Bool = false
-    @State private var showSheet: Bool = false
+    @State private var showSheet: Bool = true
+    @State private var selectedDetent: PresentationDetent = .fraction(0.42)
     @State private var textFieldText: String = ""
     @State private var selectedPlacemark: String?
     @State private var MKMapItemPlacemark: MKMapItem?
@@ -71,6 +73,7 @@ struct MainView: View {
             showSheet = newValue != nil
             route = nil
             getDirections = false
+            selectedDetent = .fraction(0.42)
         })
         .onChange(of: getDirections, { oldValue, newValue in
             if newValue {
@@ -78,9 +81,11 @@ struct MainView: View {
             }
         })
         .sheet(isPresented: $showSheet, content: {
-            SheetDetailView(showSheet: $showSheet, urgentCares: $urgentCares, hospitals: $hospitals, getDirections: $getDirections, placeType: $placeType, MKMapItemPlacemark: $MKMapItemPlacemark)
-                .presentationDetents([.height(340)])
-                .presentationBackgroundInteraction(.enabled(upThrough: .height(340)))
+            SheetDetailView(showSheet: $showSheet, selectedDetent: $selectedDetent, urgentCares: $urgentCares, hospitals: $hospitals, getDirections: $getDirections, placeType: $placeType, MKMapItemPlacemark: $MKMapItemPlacemark)
+                .presentationDetents([.fraction(0.08), .fraction(0.42)], selection: $selectedDetent)
+                .interactiveDismissDisabled()
+//                .presentationBackgroundInteraction(.enabled(upThrough: .height(340)))
+                .presentationBackgroundInteraction(.enabled)
                 .presentationCornerRadius(12)
         })
         .onAppear{
@@ -94,24 +99,7 @@ struct MainView: View {
             MapCompass()
             MapPitchToggle()
         }
-            VStack {
-                Spacer()
-                HStack {
-                    Image(systemName: "location.magnifyingglass")
-//                        .foregroundStyle(.blue)
-                        .font(.title)
-                        .padding(.leading, 3)
-                    TextField("Search...", text: $textFieldText)
-                        .font(.title)
-                    Image(systemName: "person.fill")
-                        .font(.title)
-                        .padding(.trailing, 12)
-                }
-                .frame(maxWidth: UIScreen.main.bounds.width * 0.8, maxHeight: UIScreen.main.bounds.height * 0.08)
-                .background(.white)
-                .cornerRadius(20)
-                .padding()
-            }
+
     }
 }
 }
@@ -216,5 +204,8 @@ extension MainView {
 }
 
 /*
- Testing out new commit
+I need to change the sheet so that it is about a third of the way up to imitate apple maps, but it'll always be set to true, if it gets swiped down then it'll still show a search Maps textfield and then it can get dragged all the way up to search for places so that theres only a tiny crack showing
  */
+
+//Put a sheet on top of a sheet?
+//Use a full screen cover that way I can get rid of the glitchy animation
