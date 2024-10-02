@@ -28,8 +28,9 @@ struct MainView: View {
     
     @State private var placeType: String?
     
+    @State private var isTextFieldFocused: Bool = false
+    
     @State private var cameraPosition: MapCameraPosition = .userLocation(followsHeading: true, fallback: .automatic)
-    //        .userLocation(fallback: .automatic)
     var body: some View {
         ZStack {
         Map(position: $cameraPosition, selection: $selectedPlacemark) {
@@ -64,6 +65,7 @@ struct MainView: View {
                     .stroke(placeType == "Urgent Care" ? .purple : .red, lineWidth: 6)
             }
         }
+        .ignoresSafeArea(.keyboard, edges: .all)
         .onChange(of: selectedPlacemark, { oldValue, newValue in
             if let selectedPlacemark = selectedPlacemark {
                 MKMapItemPlacemark = fetchMKMapItem(selectedPlacemark: selectedPlacemark)
@@ -99,7 +101,6 @@ struct MainView: View {
             MapCompass()
             MapPitchToggle()
         }
-
     }
 }
 }

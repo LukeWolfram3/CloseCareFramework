@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct Hospital: Codable {
+struct Hospital: Codable, Identifiable {
     let name: String
     let latitude: CGFloat
     let longitude: CGFloat
     let phone: String
     let website: URL
     
+    var id: String {
+        "\(name)-\(latitude)-\(longitude)"
+    }
+
 //    enum CodingKeys: String, CodingKey {
 //        case hospitalName = "name"
 //        case hospitalLatitude = "latitude"
